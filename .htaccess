@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} =POST
+RewriteRule ^ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
+RemoveHandler .html .htm
+AddType application/x-httpd-php .php .htm .html .phtml
