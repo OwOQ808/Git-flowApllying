@@ -1,7 +1,7 @@
 <?php
 	class IndexController extends Controller{
 		private $page='/application/views/main.tpl.php';
-		private $page1='F:\beresta_mvc_pet-master\application\views\bodycontent.tpl.php';
+		private $page1= view_path.'bodycontent.tpl.php';
 		public function __construct(){
 			$this->model=new IndexModel();
 			$this->view=new View();

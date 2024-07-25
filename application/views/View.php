@@ -17,7 +17,7 @@
 		}
 		public function downloadBook($fpdf){
 			
-			$filename = 'F:/beresta_mvc/filedir/'.$fpdf; // Путь к вашему файлу
+			$filename = file_path.$fpdf; // Путь к вашему файлу
 			header("Content-type: application/octet-stream");
 			header('Content-Disposition: attachment; filename="'. basename($filename) .'"');
 			header('Content-Length: ' . filesize($filename));

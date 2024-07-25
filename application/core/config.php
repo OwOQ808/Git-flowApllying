@@ -6,6 +6,7 @@
   	define('controller_path','application/controlers/');
   	define('view_path','application/views/');
   	define('model_path','application/models/');
+	define('file_path','filedir/');
   	define('root',$_SERVER['DOCUMENT_ROOT']);
   	require_once 'db.php';
   	require_once 'route.php';
