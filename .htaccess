@@ -1,8 +1,8 @@
 RewriteEngine On
+AddDefaultCharset UTF-8
 RewriteCond %{REQUEST_METHOD} =POST
+RewriteCond %{REQUEST_URI} ^/api/ [NC]
 RewriteRule ^ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php [L,QSA]
-RemoveHandler .html .htm
-AddType application/x-httpd-php .php .htm .html .phtml
+RewriteRule .* index.php [L]
