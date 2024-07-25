@@ -372,10 +372,10 @@ function loadProfile(){
   				elem2=document.createElement('div');
   				elem2.classList.toggle('elem23');
 
-  				elem3=document.createElement('div');
-  				elem3.classList.toggle('bn');
-  				elem3.appendChild(document.createTextNode('Администратор'));
-  				elem2.appendChild(elem3);
+  				// elem3=document.createElement('div');
+  				// elem3.classList.toggle('bn');
+  				// elem3.appendChild(document.createTextNode('Администратор'));
+  				// elem2.appendChild(elem3);
 
   				elem3=document.createElement('div');
   				elem3.classList.toggle('dn');
