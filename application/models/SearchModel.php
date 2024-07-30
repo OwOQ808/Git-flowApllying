@@ -10,8 +10,11 @@
 			$go =  $_GET['name'];
 			$bb[]=$go;
 			for($i=0;$i<count($books);$i++){
-				if(str_contains(mb_strtolower($books[$i]['bookname']),mb_strtolower($go)) || 
-					str_contains(mb_strtolower($books[$i]['authorname']),mb_strtolower($go))){
+				if(str_contains(mb_strtolower($books[$i][1]),mb_strtolower($go)) || 
+					str_contains(mb_strtolower($books[$i][11]),mb_strtolower($go))
+					|| str_contains(mb_strtolower($books[$i][13]),mb_strtolower($go))
+					) 
+				{
 					$bb[]=[
 					$books[$i]['idbooks'],
 					$books[$i]['bookname'],
