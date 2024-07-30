@@ -20,7 +20,7 @@
         </div>
        
         <div class="d-flex d-inline w-100">
-        <input class="form-control me-2" type="search" id ="searchers" placeholder="Ищите книгу по названию или ключевым словам..." aria-label="Search">
+        <input class="form-control me-2" type="search" id ="searchers" placeholder="Ищите книгу по названию, автору или жанру..." aria-label="Search">
         <button class="btn btn-outline-success" id="search">Поиск</button>
       </div>
         </div>
