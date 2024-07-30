@@ -340,15 +340,15 @@ function loadProfile(){
 
 
   				let elem3=document.createElement('div');
-  				elem3.appendChild(document.createTextNode('Email: '+info[0][0]));
+  				elem3.appendChild(document.createTextNode('Email: '+ info[0][0].substring(0, 3) + info[0][0].substring(3).replace(/[\s\S]/g, "*") ));
   				elem2.appendChild(elem3);
 
   				elem3=document.createElement('div');
-  				elem3.appendChild(document.createTextNode('Логин: '+info[0][1]));
+  				elem3.appendChild(document.createTextNode('Логин: '+ info[0][1].substring(0, 3) + info[0][1].substring(3).replace(/[\s\S]/g, "*") ));
   				elem2.appendChild(elem3);
 
   				elem3=document.createElement('div');
-  				elem3.appendChild(document.createTextNode('Телефон: '+info[0][4]));
+  				elem3.appendChild(document.createTextNode('Телефон: '+ info[0][4].substring(0, 3) + info[0][4].substring(3).replace(/[\s\S]/g, "*") ));
   				elem2.appendChild(elem3);
 
   				elem1.appendChild(elem2);
